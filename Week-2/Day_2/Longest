@@ -13,6 +13,7 @@ public:
         int start = 0; 
         int len = s.length();
         
+        for (int end = 0; end < len; ++end) {
             char current_char = s[end];
             
             if (lastSeen[current_char] >= start) {

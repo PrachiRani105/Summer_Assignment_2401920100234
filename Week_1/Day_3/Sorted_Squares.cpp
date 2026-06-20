@@ -1,6 +1,3 @@
-#include <vector>
-#include <cmath>
-
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {

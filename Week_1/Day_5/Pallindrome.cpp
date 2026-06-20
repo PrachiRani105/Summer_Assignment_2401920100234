@@ -1,9 +1,3 @@
-#include <iostream>
-#include <string>
-#include <cctype>
-using namespace std;
-
-
 class Solution {
 public:
     bool isPalindrome(string s) {

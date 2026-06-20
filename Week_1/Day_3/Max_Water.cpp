@@ -1,6 +1,3 @@
-3include <iostream>
-#include <vector>
-#include <algorithm>
 class Solution {
 public:
     int maxArea(vector<int>& height) {

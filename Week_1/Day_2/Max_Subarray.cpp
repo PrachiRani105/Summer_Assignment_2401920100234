@@ -1,7 +1,4 @@
-#include<vector>
-#include<algorithm>
-using namespace std;
- class Solution {
+class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
         int currentSum = nums[0];

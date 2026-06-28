@@ -1,0 +1,26 @@
+class Solution {
+public:
+    int evalRPN(std::vector<std::string>& tokens) {        
+        std::vector<int> stack(tokens.size());
+        int top = 0;
+       for (const std::string& token : tokens) {
+           
+            if (token.length() == 1 && (token[0] == '+' || token[0] == '-' || token[0] == '*' || token[0] == '/')) {
+                int b = stack[--top];
+                int a = stack[--top];
+
+                switch (token[0]) {
+                    case '+': stack[top++] = a + b; break;
+                    case '-': stack[top++] = a - b; break;
+                    case '*': stack[top++] = a * b; break;
+                    case '/': stack[top++] = a / b; break; 
+                }
+            } else {
+                
+                stack[top++] = std::stoi(token);
+            }
+        }
+
+        return stack[0];
+    }
+};
